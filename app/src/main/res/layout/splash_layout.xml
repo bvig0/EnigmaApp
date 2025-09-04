@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FDFDFD"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/logoenig"
+        android:layout_centerInParent="true"
+
+
+        />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/enigfont"
+        android:textSize="35sp"
+        android:layout_below="@+id/logo"
+        android:layout_centerInParent="true"
+        android:text="Enigma"
+        android:textColor="#F60000"
+        />
+<com.google.android.material.progressindicator.LinearProgressIndicator
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/texto"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="5dp"
+    android:indeterminate="true"
+
+
+</RelativeLayout>
