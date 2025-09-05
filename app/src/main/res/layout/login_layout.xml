@@ -66,24 +66,37 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/butão"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/butão"
         android:layout_below="@id/edtSenha"
-        android:layout_marginTop="5dp"
-        android:text="ENTRAR"
+        android:layout_margin="10dp"
         android:backgroundTint="#000"
+        android:text="ENTRAR"
         android:textColor="#FF0000"
-    />
+        android:textSize="15dp"
+        app:cornerRadius="50dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/butão"
+        android:layout_margin="10dp"
+        android:backgroundTint="#000"
+        android:text="SAIR"
+        android:textColor="#FF0000"
+        android:textSize="15dp"
+        app:cornerRadius="50dp" />
+
     <Button
-        style="?attr/borderlessButtonStyle"
         android:id="@+id/textButton"
+        style="?attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="esqueci minha senha 😥"
-        android:layout_below="@+id/butão"
+        android:layout_below="@+id/sair"
         android:layout_centerHorizontal="true"
-        android:textColor="#000"
-        />
+        android:text="esqueci minha senha 😥"
+        android:textColor="#000" />
 
 </RelativeLayout>
