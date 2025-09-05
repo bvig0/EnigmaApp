@@ -5,46 +5,65 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    android:layout_margin="20dp">
+    android:layout_margin="20dp"
+    android:background="#FDFDFD"
+    tools:context=".LoginActivity">
+
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_marginTop="50dp"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:src="@drawable/logoenig"
-
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logoenig" />
 
     <TextView
         android:id="@+id/texto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/enigfont"
         android:layout_below="@+id/logo"
         android:layout_centerInParent="true"
         android:layout_marginTop="10dp"
-        android:textSize="15dp"
-        android:text="Usuario"
-        android:textColor="#353535" />
+        android:fontFamily="@font/enigfont"
+        android:text="Enigma"
+        android:textColor="#353535"
+        android:textSize="35dp" />
+
+
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/digitar"
-        android:layout_below="@+id/texto"
+        android:id="@+id/edtEmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto"
+        android:layout_marginTop="15dp"
+        android:hint="Insira seu E-mail"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/email_icon">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtEmail"
+        android:layout_marginTop="10dp"
+        android:hint="Insira sua senha"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/senha">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
 
-
-
-
+    </com.google.android.material.textfield.TextInputLayout>
 
 
 </RelativeLayout>
